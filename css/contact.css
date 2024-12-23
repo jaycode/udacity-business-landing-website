@@ -1,0 +1,90 @@
+@import "main.css";
+
+.hero {
+  background: url('../images/rainbow-vortex.png') no-repeat center center/cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.container {
+  display: flex;
+}
+
+.contact-details,
+.online-inquiry {
+  padding: 2rem;
+}
+
+.online-inquiry {
+  flex-grow: 1;
+}
+
+.contact-details {
+  text-align: center;
+}
+
+.contact-details address {
+  font-style: normal;
+}
+
+
+.contact-details h3,
+.online-inquiry h3 {
+  margin: auto;
+  width:50%;
+  text-align: center;
+}
+
+.online-inquiry form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.online-inquiry form input,
+.online-inquiry form textarea {
+  box-sizing: border-box; /* This property ensures the width 100% includes the left & right paddings */
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.online-inquiry form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.online-inquiry form .submit {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.online-inquiry form .reset {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+  }
+
+  .container {
+    display: block;
+  }
+}

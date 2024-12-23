@@ -1,0 +1,62 @@
+@import "main.css";
+
+.flex-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.box {
+  flex: 1;
+  background: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+.box h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.about {
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+.about img {
+  float: left;
+  margin: 0 20px 10px 0;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .flex-boxes {
+    flex-direction: None;
+    align-items: center;
+  }
+  .box {
+    flex: 1 1 calc(50% - 20px);
+    background: #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
